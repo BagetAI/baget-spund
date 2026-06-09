@@ -1,25 +1,20 @@
 ---
 version: alpha
 colors:
-  primary: "#1A1A1A"        # Deep Charcoal
-  secondary: "#F5F0E6"      # Warm Cream
-  accent: "#B8860B"         # Draft-tap Brass
+  primary: "#1A1A1A"
+  secondary: "#F5F0E6"
+  accent: "#B8860B"
   neutral-dark: "#1A1A1A"
   neutral-light: "#F5F0E6"
-  neutral-muted: "#8A857B"
 typography:
-  headings: "Söhne, -apple-system, BlinkMacSystemFont, sans-serif"
-  body: "Inter, -apple-system, BlinkMacSystemFont, sans-serif"
-  size-base: "16px"
-  size-lg: "20px"
-  size-xl: "32px"
-  size-xxl: "48px"
+  headings: "Söhne, sans-serif"
+  body: "Inter, sans-serif"
 spacing:
-  xs: "4px"
-  sm: "8px"
-  md: "16px"
-  lg: "32px"
-  xl: "64px"
+  xs: "0.25rem"
+  sm: "0.5rem"
+  md: "1rem"
+  lg: "2rem"
+  xl: "4rem"
 rounded:
   sm: "2px"
   md: "4px"
@@ -28,45 +23,29 @@ components:
   button-primary:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.secondary}"
-    border: "1px solid {colors.primary}"
-    padding: "12px 24px"
-    fontFamily: "{typography.body}"
+    padding: "{spacing.sm} {spacing.md}"
     rounded: "{rounded.sm}"
+    border: "1px solid {colors.primary}"
   button-primary-hover:
     backgroundColor: "{colors.accent}"
     textColor: "{colors.primary}"
   button-secondary:
     backgroundColor: "transparent"
     textColor: "{colors.primary}"
-    border: "1px solid {colors.primary}"
-    padding: "12px 24px"
-    fontFamily: "{typography.body}"
+    padding: "{spacing.sm} {spacing.md}"
     rounded: "{rounded.sm}"
-  button-secondary-hover:
+    border: "1px solid {colors.primary}"
+  card:
     backgroundColor: "{colors.secondary}"
-    textColor: "{colors.primary}"
-  keg-badge:
-    backgroundColor: "{colors.accent}"
-    textColor: "{colors.primary}"
-    padding: "6px 12px"
-    rounded: "{rounded.lg}"
-elevation:
-  flat: "none"
-  subtle: "0 2px 4px rgba(0,0,0,0.05)"
+    border: "1px solid {colors.primary}"
+    padding: "{spacing.lg}"
+    rounded: "{rounded.sm}"
 ---
 
-# Spund Brand Identity Spec
+# Spund Design Specification
 
-This document details the visual identity system for Spund, serving Berlin's premium specialty cafes.
+The design system is engineered for Berlin's industrial-minimalist coffee culture. It bridges high-quality specialty craft with eco-conscious circular systems.
 
-## Logo System
-The official Spund logo synthesizes Berlin's rugged, industrial-minimal aesthetic with the purity of high-end draft beverage systems.
-
-- **Icon**: A unified glyph merging a draft tap head with a single, precise liquid droplet. 
-- **Typography**: Wordmark set in a customized neo-grotesque sans-serif reflecting the architectural gravity of Berlin coffee culture.
-- **Colorways**: Optimized for high-contrast presentation on stainless steel kegs, brass tap handles, and neutral porcelain.
-
-## Visual Language Rules
-1. **High Contrast**: Always set the warm cream (`#F5F0E6`) against the deep charcoal (`#1A1A1A`) to mimic industrial print and chalkboards.
-2. **Metallic Accent**: Use the brass accent (`#B8860B`) strictly for functional focal points (draft taps, CTA highlights, active states).
-3. **No Gradients**: All shapes, backgrounds, and icons must remain completely flat to uphold the raw, minimal warehouse aesthetic.
+## Brand Mark Visual Rationale
+- **The Tap & Oat**: Merging the technical precision of a gas/draft tap handle (Spund / Spundung) with a geometric, simplified oat kernel.
+- **The Palette**: Contrast of warm oat cream (#F5F0E6) and heavy industrial charcoal (#1A1A1A) is highlighted by a rich, metallic brass accent (#B8860B) reminiscent of manual espresso group heads and custom draft columns.
