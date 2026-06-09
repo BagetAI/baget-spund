@@ -6,6 +6,7 @@ colors:
   accent: "#B8860B"
   neutral-dark: "#1A1A1A"
   neutral-light: "#F5F0E6"
+  accent-brass: "#B8860B"
 typography:
   headings: "Söhne, sans-serif"
   body: "Inter, sans-serif"
@@ -23,29 +24,26 @@ components:
   button-primary:
     backgroundColor: "{colors.primary}"
     textColor: "{colors.secondary}"
-    padding: "{spacing.sm} {spacing.md}"
+    padding: "0.75rem 1.5rem"
     rounded: "{rounded.sm}"
-    border: "1px solid {colors.primary}"
+    fontFamily: "{typography.headings}"
   button-primary-hover:
-    backgroundColor: "{colors.accent}"
+    backgroundColor: "{colors.accent-brass}"
     textColor: "{colors.primary}"
-  button-secondary:
-    backgroundColor: "transparent"
-    textColor: "{colors.primary}"
-    padding: "{spacing.sm} {spacing.md}"
-    rounded: "{rounded.sm}"
-    border: "1px solid {colors.primary}"
-  card:
-    backgroundColor: "{colors.secondary}"
-    border: "1px solid {colors.primary}"
-    padding: "{spacing.lg}"
-    rounded: "{rounded.sm}"
+  logo-container:
+    width: "120px"
+    height: "120px"
+    backgroundColor: "{colors.primary}"
+    padding: "{spacing.md}"
 ---
 
-# Spund Design Specification
+# Spund Brand Identity System
 
-The design system is engineered for Berlin's industrial-minimalist coffee culture. It bridges high-quality specialty craft with eco-conscious circular systems.
+This design specification details the industrial-minimal aesthetic developed for **Spund**, Berlin's zero-waste draft oat milk partner for specialty cafes.
 
-## Brand Mark Visual Rationale
-- **The Tap & Oat**: Merging the technical precision of a gas/draft tap handle (Spund / Spundung) with a geometric, simplified oat kernel.
-- **The Palette**: Contrast of warm oat cream (#F5F0E6) and heavy industrial charcoal (#1A1A1A) is highlighted by a rich, metallic brass accent (#B8860B) reminiscent of manual espresso group heads and custom draft columns.
+## Visual Identity Concept
+The visual design mirrors the architectural and industrial rigor of Berlin's specialty coffee scene. By treating oat milk as a premium draft beverage (kegged, pressurized, and tapped), we bypass packaging waste and position the product alongside craft beer and specialty espresso equipment.
+
+- **Logo Concept**: A high-contrast graphic merger of a classic heavy-metal keg/bung valve mechanism (the German *Spund*) and a single, geometric grain of oat.
+- **Color Story**: Industrial-minimal. Deep charcoal slate mimics heavy metals and espresso machines, warm cream represents raw oat grain and thick steamed microfoam, and rich brass serves as the tactile point of contact (the physical draft tap).
+- **Typography**: Söhne's sharp, micro-grooved terminal lines emphasize mechanical precision for high-impact headlines, paired with Inter's highly legible, utility-focused layout for technical packaging, invoicing, and digital bodies.
