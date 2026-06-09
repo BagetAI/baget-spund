@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 140" width="100%" height="100%">
+  <defs>
+    <!-- Define drop shadow or glow filters if needed, keeping it raw and minimalist -->
+    <style>
+      .bg-rect { fill: none; }
+      .brand-steel { fill: #1A1C1E; }
+      .brand-green { fill: #10B981; }
+      .brand-grey { fill: #E2E8F0; }
+      .brand-slate { fill: #64748B; }
+      
+      /* Pure vector styling */
+      .icon-stroke {
+        stroke: #10B981;
+        stroke-width: 5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+      .icon-fill {
+        fill: #1A1C1E;
+      }
+    </style>
+  </defs>
+
+  <!-- Background container, transparent by default for placing on steel or cream backgrounds -->
+  <rect width="100%" height="100%" class="bg-rect" />
+
+  <!-- ========================================== -->
+  <!-- 1. THE CLOSED-LOOP ICON (Taps & Intersection) -->
+  <!-- ========================================== -->
+  <g transform="translate(10, 0)">
+    <!-- First Loop (Left Circle) -->
+    <circle cx="65" cy="70" r="32" class="icon-stroke" style="stroke: #1A1C1E; stroke-width: 6;" />
+    
+    <!-- Second Loop (Right Circle - Interlocking) -->
+    <circle cx="95" cy="70" r="32" class="icon-stroke" style="stroke: #10B981; stroke-width: 6;" />
+    
+    <!-- Intersection Highlights / Airtight Bung Detail -->
+    <circle cx="80" cy="70" r="10" class="brand-steel" />
+    
+    <!-- Vertical High-Pressure Fluid Channel (Pressurized Tap) -->
+    <rect x="77" y="24" width="6" height="92" rx="3" class="brand-green" />
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 2. THE SPUND WORDMARK (Structural Geometry) -->
+  <!-- ========================================== -->
+  <g transform="translate(155, 0)" class="brand-steel">
+    
+    <!-- Letter S -->
+    <path d="M 40 46 
+             C 40 34, 75 34, 75 44 
+             C 75 52, 41 55, 41 68 
+             C 41 78, 76 78, 76 66" 
+          fill="none" stroke="#1A1C1E" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter" />
+    
+    <!-- Letter P -->
+    <path d="M 98 84 L 98 38 L 124 38 C 138 38, 138 58, 124 58 L 98 58" 
+          fill="none" stroke="#1A1C1E" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter" />
+    
+    <!-- Letter U (Featuring the precise slice cut at the bottom center) -->
+    <!-- Left side of U -->
+    <path d="M 160 38 L 160 72 C 160 84, 175 84, 179 84" 
+          fill="none" stroke="#1A1C1E" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter" />
+    <!-- Vertical slice gap representing tap insertion coupler -->
+    <!-- Right side of U -->
+    <path d="M 189 84 C 193 84, 208 84, 208 72 L 208 38" 
+          fill="none" stroke="#1A1C1E" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter" />
+    
+    <!-- Letter N -->
+    <path d="M 230 84 L 230 38 L 268 84 L 268 38" 
+          fill="none" stroke="#1A1C1E" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter" />
+    
+    <!-- Letter D -->
+    <path d="M 292 84 L 292 38 L 314 38 C 334 38, 334 84, 314 84 Z" 
+          fill="none" stroke="#1A1C1E" stroke-width="12" stroke-linecap="square" stroke-linejoin="miter" />
+          
+  </g>
+  
+  <!-- Subtitle for structural alignment (Berlin Zero-Waste Loop) -->
+  <text x="195" y="114" font-family="'Outfit', -apple-system, sans-serif" font-size="11" font-weight="800" letter-spacing="4" fill="#64748B">BERLIN ZERO-WASTE LOOP</text>
+</svg>
